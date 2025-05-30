@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Interativo - Educação</title>
+<body>
+    <div class="quiz-container">
+    <h2> Políticas Públicas de Educação</h2>
+    <i>"As políticas públicas de educação são ações planejadas e executadas pelo Estado com o objetivo de garantir o acesso, a permanência e a qualidade do ensino para todos os cidadãos. No Brasil, essas políticas envolvem programas, metas e investimentos que buscam reduzir desigualdades, valorizar os profissionais da educação e melhorar os índices de aprendizagem. Um exemplo importante é o Plano Nacional de Educação (PNE), que define diretrizes e metas para a educação brasileira em um período de 10 anos."</i>
+
+    <p><strong>Pergunta:</strong>Qual é o principal objetivo do Plano Nacional de Educação (PNE)?</p>
+
+    <form id="quiz-form">
+      <p></p><label class="option-label">
+        <input type="radio" name="answer" value="A" data-correct="false">
+        1) Garantir apenas o ensino superior gratuito.
+      </label></p>
+      <p><label class="option-label">
+        <input type="radio" name="answer" value="B" data-correct="true">
+        2) Estabelecer metas para a melhoria da educação em todos os níveis.
+      </label></p>
+      <p><label class="option-label">
+        <input type="radio" name="answer" value="C" data-correct="false">
+        3) Eliminar todas as formas de educação a distância.
+      </label></p>
+
+      <button type="button" id="submit-btn">Verificar resposta</button>
+      <button type="button" id="reset-btn" style="display: none;">Tentar novamente</button>
+    </form>
+
+    <div id="feedback"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
